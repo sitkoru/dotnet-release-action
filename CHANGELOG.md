@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/sitkoru/dotnet-release-action/compare/v1.0.0...v1.1.0) (2022-01-11)
+
+
+### Features
+
+* version shoud be pass from workflow ([45b1954](https://github.com/sitkoru/dotnet-release-action/commit/45b195414b87d5e17da7c90ef93e7e3f1e8042f0))
+
 # 1.0.0 (2022-01-11)
 
 
