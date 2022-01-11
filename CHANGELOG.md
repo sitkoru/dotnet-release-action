@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/sitkoru/dotnet-release-action/compare/v1.1.0...v1.1.1) (2022-01-11)
+
+
+### Bug Fixes
+
+* rename vars ([71cc0fa](https://github.com/sitkoru/dotnet-release-action/commit/71cc0fa6acb9c26e6078861e2214f5a90696622a))
+
 # [1.1.0](https://github.com/sitkoru/dotnet-release-action/compare/v1.0.0...v1.1.0) (2022-01-11)
 
 
