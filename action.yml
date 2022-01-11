@@ -49,7 +49,7 @@ runs:
       env:
         VERSION: ${{ inputs.version }}
       run: |
-        DOCKER_IMAGE=${{ secrets.DOCKER_REGISTRY_URL }}/${{ secrets.DOCKER_IMAGE_NAME }}
+        DOCKER_IMAGE=${{ inputs.DOCKER_REGISTRY_URL }}/${{ inputs.DOCKER_IMAGE_NAME }}
         TAGS="${DOCKER_IMAGE}:${VERSION}"
         if [[ $VERSION =~ ^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}$ ]]; then
             MINOR=${VERSION%.*}
@@ -76,8 +76,8 @@ runs:
       uses: docker/login-action@v1
       with:
         username: ${{ inputs.docker_registry_username }}
-        password: ${{ secrets.docker_registry_password }}
-        registry: ${{ secrets.docker_registry }}
+        password: ${{ inputs.docker_registry_password }}
+        registry: ${{ inputs.docker_registry }}
     - name: Build and push docker image
       uses: docker/build-push-action@v2
       with:
