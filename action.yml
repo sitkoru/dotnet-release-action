@@ -79,7 +79,7 @@ runs:
         password: ${{ inputs.docker_registry_password }}
         registry: ${{ inputs.docker_registry }}
     - name: Build and push docker image
-      uses: docker/build-push-action@v2
+      uses: docker/build-push-action@v3
       with:
         file: ${{ inputs.docker_file }}
         context: ./app
